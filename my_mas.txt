@@ -1,0 +1,1 @@
+['Day', 'Hello', 'Python', 'World', 4, 7, 10, 12]
