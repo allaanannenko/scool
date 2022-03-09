@@ -5,10 +5,7 @@
 # Описать в базовом классе абстрактный метод для расчета количества и типа пищи,
 # необходимого для пропитания животного в зоопарке.
 
-# Задача 2:
-# Напишите программы создания файла добавления в него записей,
-# удаления записей, исправления записей, вывода содержимого файла на экран
-# (все описать в функциях)------------------------залить все это на github и скинуть мне ссылки.
+
 
 from abc import ABC, abstractmethod
 class Animal(ABC):
@@ -21,7 +18,7 @@ class Animal(ABC):
 
 class wolf(Animal):
     def __init__(self, name, nutrition, quantity_of_food):
-        super(Animal).__init__(self, name, nutrition)
+        super().__init__(self, name, nutrition)
         self.quantity_of_food = quantity_of_food
         self.name = name
         self.nutrition = nutrition
@@ -31,7 +28,7 @@ class wolf(Animal):
         print("Ест", str(self.quantity_of_food), "кг мясо.")
 class dog(Animal):
     def __init__(self, name, nutrition, quantity_of_food):
-        super(dog, self).__init__(self, name, nutrition)
+        super().__init__(self, name, nutrition)
         self.quantity_of_food = quantity_of_food
         self.name = name
         self.nutrition = nutrition
@@ -42,9 +39,6 @@ class dog(Animal):
 
 a = wolf("волк", 'хищник', 50)
 a.print_wolf()
-
-
-
 
 
 
