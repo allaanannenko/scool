@@ -21,8 +21,10 @@ class Animal(ABC):
 
 class wolf(Animal):
     def __init__(self, name, nutrition, quantity_of_food):
-        super().__init__(self, name, nutrition)
+        super(Animal).__init__(self, name, nutrition)
         self.quantity_of_food = quantity_of_food
+        self.name = name
+        self.nutrition = nutrition
     def print_wolf(self):
         print("Животное :", self.name)
         print("Тип питания :", self.nutrition)
@@ -31,6 +33,8 @@ class dog(Animal):
     def __init__(self, name, nutrition, quantity_of_food):
         super(dog, self).__init__(self, name, nutrition)
         self.quantity_of_food = quantity_of_food
+        self.name = name
+        self.nutrition = nutrition
     def print_dog(self):
         print("Животное :", self.name)
         print("Тип питания :", self.nutrition)
